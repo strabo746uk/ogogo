@@ -1,0 +1,532 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+body{
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik', sans-serif; ;
+ }
+/*======================*/
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
+.page{
+    flex: 1 1 auto;
+}
+
+.header{
+  max-height: 100px;
+  background-color: rgb(37, 37, 41);
+}
+.header__container{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1100px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+}
+.header__body{
+    display: flex;
+    
+}
+.header__logo{
+    max-width: 100px;
+    max-height: 70px;
+    margin: 15px 0px 15px 0px;
+
+}
+.header__logo img{
+    max-height: 100%;
+    object-fit: cover;
+}
+.header__text{
+  display: flex;
+  align-items: center;
+  margin-left:30px ;
+}
+.header__p{
+   font-size: 18px;
+   color: rgb(219, 219, 215);
+}
+
+.header__contact{
+    display: flex;
+    align-items: center;
+}
+.header__zakaz{
+    margin-right: 30px;
+    color: rgb(219, 219, 215) ;
+}
+.header__icon{
+    margin-left: 20px;
+}
+@media(max-width:1200px){
+    .header__container{
+        max-width: 970px;
+    }
+}
+@media(max-width:992px){
+    .header__container{
+        max-width: 750px;
+    }
+}
+@media(max-width:767px){
+    .header__container{
+        max-width: none;
+    }
+    .header__zakaz{
+        display: none;
+    }
+    .header__tel{
+        padding-right: 30px;
+    }
+    .header__icon{
+        margin-right: 40px;
+    }
+}
+
+
+
+/*======================   гла\вная секция        */
+
+.page{
+    
+}
+.page__main{
+    max-width: 100%;
+    background-color: rgb(37, 37, 41);
+    max-height: 100%;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+.page__container{
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0px 10px;
+   
+}
+h1{
+    color: aliceblue;
+    font-size: 29px;
+    font-weight: 400;
+
+}
+.page__label{
+    font-size: 25px;
+    color: rgb(171, 174, 175);
+    margin-top: 10px;
+}
+.page__contacts{
+    font-size: 20px;
+    color: rgb(219, 219, 215);
+}
+.page__tels{
+    display: flex;
+    justify-content: start;
+}
+.tel__ico{
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.tel__ico img{
+    padding-left: 5px;
+}
+.page__tel{
+    margin: 0px 25px 0px 0px;
+    margin-top: 20px;
+}
+.page__list{
+    display: flex;
+    justify-content: space-between;
+    color:aliceblue;
+    font-size: 22px;
+}
+.page__li:last-child{
+    padding-right: 50px;
+    color: aqua;
+}
+.page__li:nth-child(2){
+    color: rgb(18, 167, 4);
+    font-size: 26px;
+
+}
+.page__li:first-child{
+    color: aqua;
+}
+
+.page__service{
+    max-width: 60%;
+
+}
+
+.page__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page__image{
+ border-radius: 5px;
+   
+}
+.page__image img{
+    border-radius: 5%;
+}
+
+@media(max-width:1200px){
+    .page__container{
+        max-width: 970px;
+    }
+}
+@media(max-width:992px){
+    .page__container{
+        max-width: 750px;
+    }
+    .page__main{
+        max-height: 100%;
+    }
+}
+@media(max-width:767px){
+    .page__container{
+        max-width: none;
+    }
+    .page__main{
+        max-height: 100%;
+    }
+    .page__content{
+        flex-wrap: wrap;
+    }
+    .page__tels{
+        justify-content: center;
+    }
+    .page__service{
+        max-width: 100%;
+        margin-top: 15px;
+    
+    }
+    .page__image{
+        margin-top: 10px;
+    }
+    .tel{
+        padding-bottom: 5px;
+    }
+    .page__title{
+        font-size: 26px;
+    }
+    .page__label{
+        font-size: 21px;
+    }
+    .page__li:last-child{
+        margin-left: 40px;
+    }
+
+   
+}
+
+/*======================   товары        */ 
+
+.section__main{
+    margin-top: 50px;
+}
+.section__container{
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+.section__h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.section__items{
+    display: flex;
+    justify-content: center;
+    flex: 0 1 auto;
+    
+}
+.section__item{
+   max-width: 260px;
+   max-height: 301px;
+
+    margin-left:15px;
+}
+.section__opus{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+   
+}
+.section__price{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 15px;
+}
+.section__form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.section__item img{
+    max-width:100%;
+   max-height: 301px;
+   object-fit: cover;
+}
+.section__item:last-child{
+   
+}
+.section__items-two{
+    display: flex;
+    justify-content:center ;
+   
+    margin-top: 40px;
+   
+}
+.section__item-two{
+   margin-left: 15px;
+    max-width: 265px;
+
+}
+.section__item-two img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+@media(max-width:1200px){
+    .section__container{
+        max-width: 970px;
+    }
+}
+@media(max-width:992px){
+    .section__container{
+        max-width: 750px;
+    }
+}
+@media(max-width:767px){
+    .section__container{
+        max-width: none;
+    }
+    .section__items{
+        flex-wrap: wrap;
+        margin-top: -15px;
+       
+    }
+    .section__item{
+        margin-top: 20px;
+    }
+    .section__items-two{
+        flex-wrap: wrap;
+       
+    }
+    .section__item-two{
+        margin-top: 15px;
+    }
+     
+}
+
+
+
+
+
+
+
+.lavah{
+margin-top: 70px;
+}
+
+.lavah__containerrt{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    padding: 0px 10px;
+}
+.lavah__shaum{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.lavah__title{
+    display: flex;
+    justify-content: start;
+}
+
+.lavah__prise{
+    display: flex;
+}
+
+.lavah__okor{
+    max-width: 261px;
+    padding-top: 20px;
+    margin-left: 30px;
+
+}
+.okor{
+    margin-top: 32px;
+}
+h3{
+    
+}
+.lavah__okor img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.lavah__opus{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.lavah__cena{
+    text-align: center;
+
+}
+.lavah__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lavah__width{
+    width: 80px;
+    height: 2px;
+    background-color: green;
+    align-items: center;
+    margin-left: 23px;
+}
+
+
+@media(max-width:1200px){
+    .lavah__containerrt{
+        max-width: 970px;
+    }
+}
+@media(max-width:992px){
+    .lavah__containerrt{
+        max-width: 750px;
+    }
+    .lavah__prise{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:767px){
+    .lavah__containerrt{
+        max-width: none;
+        flex-wrap: wrap;
+    }
+    .lavah__content{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 10px;
+    }
+    .lavah__prise{
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        justify-content: center;
+    }
+    .lavah__okor{
+        text-align: center;
+    }
+    .lavah__h{
+        margin-left: 20px;
+    }
+    .opus{
+        margin-top: 16px;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.footer{
+   width: 100%;
+   background:rgb(37, 37, 41);
+   padding-top: 15px;
+   max-height: 70px;
+}
+.footer__container{
+    max-width: 1100px;
+    margin: 0px auto;
+}
+.footer__body{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__local{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.footer__text{
+    padding-left: 15px;
+}
+@media(max-width:1200px){
+    .footer__container{
+        max-width: 970px;
+    }
+}
+@media(max-width:992px){
+    .footer__container{
+        max-width: 750px;
+    }
+}
+@media(max-width:767px){
+    .footer__container{
+        max-width: none;
+        padding: 0px 10px;
+    }
+    .footer__body{
+        flex-wrap: wrap;
+    }
+    .footer__ear{
+        padding-left: 10px;
+        font-size: 17px;
+    }
+    .footer__local{
+        padding-left: 10px;
+        align-items: center;
+        font-size: 15px;
+    }
+    .footer__prava{
+        font-size: 14px;
+    }
+   
+}
